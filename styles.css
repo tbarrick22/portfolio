@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Andale Mono";
+	/* font-family: Palatino; */
+	background-color: rgb(245, 245, 245);
+}
+
+h1 {
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 2%;
+}
+
+nav > ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+}
+
+nav > ul > a {
+	margin-left: 40px;
+}
+
+section {
+	padding: 40px 2%;
+}
+
+.about-columns {
+	display: flex;
+	justify-content: space-between;
+}
