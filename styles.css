@@ -15,7 +15,7 @@ h1 {
 nav {
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 2%;
+	padding: 32px 2%;
 }
 
 nav > ul {
@@ -26,13 +26,117 @@ nav > ul {
 
 nav > ul > a {
 	margin-left: 40px;
+	color: rgb(60, 60, 60);
+}
+
+nav a:active {
+	color: rgb(140, 140, 140);
 }
 
 section {
-	padding: 40px 2%;
+	padding: 16px 2%;
 }
 
 .about-columns {
 	display: flex;
 	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.about-columns p {
+	width: 50%;
+}
+
+.headshot-container {
+	width: 40%;
+	height: 400px;
+	overflow: hidden;
+}
+
+.headshot-container img {
+	max-height: 100%;
+	width: auto;
+	display: block;
+}
+
+@media only screen and (max-width: 800px) {
+	/* mobile nav */
+	.about-columns {
+		flex-wrap: wrap;
+	}
+
+	.about-columns p {
+		width: 80%;
+	}
+	.headshot-container {
+		margin-top: 20px;
+		width: 80%;
+	}
+}
+
+.projects h3 {
+	margin-top: 16px;
+	/* margin-bottom: 16px; */
+}
+
+.osil-box img {
+	margin-top: 8px;
+}
+
+#skills-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 16px;
+}
+
+#skills-container > * {
+	font-size: 2em;
+	width: 2em;
+	margin-top: var(--spacing-1);
+}
+
+#skills-container i {
+	margin-bottom: 8px;
+}
+
+footer p {
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.contact-columns {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.contact-items {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+	/* mobile nav */
+	.contact-columns {
+		flex-wrap: wrap;
+	}
+
+	.contact-items {
+		width: 80%;
+	}
+
+	.contact-items h3 {
+		width: 100%;
+		margin-bottom: 4px;
+	}
+
+	.headshot-container {
+		margin-top: 20px;
+		width: 80%;
+	}
 }
